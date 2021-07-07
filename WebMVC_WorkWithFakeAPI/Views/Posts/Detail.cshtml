@@ -1,0 +1,36 @@
+﻿@model WebMVC_WorkWithFakeAPI.Models.ViewModels.PostVM;
+@{
+    ViewData["Title"] = $"Post: {Model.Post.Title}";
+}
+
+<article>
+    <!-- Post header-->
+    <header class="mb-4">
+        <div class="form-group">
+            <a asp-action="Index" class="btn-info btn text-white">See all posts</a>
+            <a asp-action="Index" class="btn-success btn text-white">Edit this post</a>
+        </div>
+
+        <h1 class="fw-bolder mb-1">Title: @Model.Post.Title</h1>
+    </header>
+    <section class="mb-5">
+        <p class="fs-5 mb-4">@Model.Post.Body</p>
+    </section>
+</article>
+
+<section class="mb-5">
+    <div class="card bg-light">
+        <div class="card-body">
+            @foreach (WebMVC_WorkWithFakeAPI.Models.Comment comment in Model.Comments)
+            {
+                <div class="d-flex">
+                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..."></div>
+                    <div class="mb-3">
+                        <div class="font-weight-bold mb-2">Name: @comment.Name</div>
+                        @comment.Body
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

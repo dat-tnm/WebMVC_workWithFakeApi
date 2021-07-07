@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t7xN0Me04Suv0D4GsCUOUp+rPx72EdCVX5c8JQbDXZqMkUUqHyFQUAj3ga8OGE7V4spNnCtO3eV3dWEdaFK9AA==",
+  "success": true,
+  "projectFilePath": "E:\\C# project\\InternSW\\WebMVC_WorkWithFakeAPI\\WebMVC_WorkWithFakeAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
